@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表标签</title>
+    <style>
+        .noneList{
+            /* 去掉列表的小圆点 */
+            list-style: none;
+            /* 清除列表默认的内边距 */
+            padding: 0px;
+            /* 清除列表默认的外边距 */
+            margin: 0px;
+        }
+        .noneList li{
+            line-height: 40px;
+            border-bottom: solid 1px gainsboro;
+            text-indent: 25px;
+        }
+        .myList{
+            list-style: -moz-lao;
+        }
+        .myList a{
+            text-decoration: none;
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="noneList">
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+        <li>列表文字</li>
+    </ul>
+    <ul> <!--ul相当于容器标签-->
+        <li>列表标题一</li>
+        <li>列表标题二</li>
+        <li>列表标题三</li>
+        <li><a href="https://www.baidu.com">百度网站</a></li>
+    </ul>
+
+    <ul class="myList">
+        <li><a href="https://baidu.com">链接文字</a></li>
+        <li><a href="#">链接文字</a></li>
+        <li><a href="#">链接文字</a></li>
+        <li><a href="#">链接文字</a></li>
+    </ul>
+</body>
+</html>

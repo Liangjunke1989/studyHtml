@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册表单</title>
+    <style>
+        .myForm div{
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>用户注册表单</h2>
+    <form class="myForm" method="post"> <!--get提交：明文提交--><!--post提交：敏感信息提交-->
+        <div>
+            <label for="">用户名：</label>
+            <label>
+                <input type="text" name="username">
+            </label>
+        </div>
+        <div >
+            <label for="">密&nbsp;&nbsp;&nbsp;码：</label>
+            <label>
+                <input type="password" name="password">
+<!--                <label for="">( 密码为暗文 )</label>-->
+            </label>
+        </div>
+        <div >
+            <label for="">性&nbsp;&nbsp;&nbsp;别：</label>
+            <label>
+                <input type="radio" name="gender" value="0">男
+                <input type="radio" name="gender" value="1">女  <!--name="gender"设置单选父级组，可以单选排它-->
+                <input type="radio" name="gender" value="-1">保密
+                <label for="">&nbsp;&nbsp;&nbsp;( 单选框 )</label>
+            </label>
+        </div>
+        <div >
+            <label for="">爱&nbsp;&nbsp;&nbsp;好：</label>
+            <label>
+                <input type="checkbox" name="hobby" value="0">台球   <!--name为键值对中的键，value为键值对中的值-->
+                <input type="checkbox" name="hobby" value="1">编程
+                <input type="checkbox" name="hobby" value="2">游戏
+                <input type="checkbox" name="hobby" value="3">旅游
+                <label for="">&nbsp;&nbsp;( 多选框 )</label>
+            </label>
+        </div>
+        <div >
+            <label for="">照&nbsp;&nbsp;&nbsp;片：</label>
+            <label>
+                <input type="file" name="pic">
+<!--                <label for="">( 选择照片 )</label>-->
+            </label>
+        </div>
+        <div >
+            <label for="">籍&nbsp;&nbsp;&nbsp;贯：</label>
+            <label >
+                <select name="city">
+                    <option value="0">北京市</option>
+                    <option value="1">泰安市</option>
+                    <option value="2">郑州市</option>
+                    <option value="3">昆明市</option>
+                </select>
+<!--                <label for="">( 选择出生地 )</label>-->
+            </label>
+        </div>
+        <div >
+            <label>简&nbsp;&nbsp;&nbsp;介：</label>
+            <label>
+                <textarea name="info" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+            <input type="button" value="普通按钮">  <!--js中绑定函数事件使用-->
+        </div>
+
+    </form>
+</body>
+</html>

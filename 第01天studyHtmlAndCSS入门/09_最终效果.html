@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局最终效果</title> <!--一级标题-->
+    <style>
+        /*清除body标签默认的外边距*/
+        body{
+            margin: 0 auto;
+        }
+        .news_con{
+            width: 520px;
+            height: 780px;
+            border-top: 1px solid #c8dcf2;
+            border-bottom: 1px solid #c8dcf2;
+            border: 2px solid black;
+        }
+        .news_con div{
+            /*  宽度width不用设置，默认等于父级的宽度 */
+            height: 40px;
+        }
+        /* 层级选择器可以越级选择 */
+        .news_con  h3{
+             /*  设置浮动 让h3和a标签可以排列在一行  */
+            float:left;
+            margin: 0px;
+            font-size: 21px;
+            font-family: 'Microsoft Sans Serif';
+            color: #172c45;
+            font-weight: normal;
+            /*margin-top: 12px;*/
+            /*通过设置行高将单行文字垂直居中*/
+            line-height: 48px;
+        }
+        .news_con a{
+            float:right;
+            /*通过设置行高将单行文字垂直居中*/
+            line-height: 48px;
+              /*  去掉文字默认的下划线  */
+            text-decoration: none;
+
+        }
+        .news_con p{
+
+            text-indent: 42px;
+            /*margin: 0px;*/
+            /*margin: auto;*/
+            /*margin-top: 10px;*/
+            margin: 5px auto;
+            text-align: left;
+
+        }
+        .news_con .myBox{
+            margin: 10px auto ;
+            /*border: 2px solid black;*/
+            width: 130px;
+            height: 60px;
+            /*background: chocolate;*/
+            /*padding-top: 20px;*/
+            /*padding-left: 20px;*/
+            color: red;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--<h2>布局的最终效果</h2>&lt;!&ndash;二级标题&ndash;&gt;-->
+<!-- 根据UI设计图来进行网页布局-->
+<!-- 通用块容器标签，先整体布局-->
+<div class="news_con">
+    <!-- 通用块容器标签，先从上到下划分三行-->
+    <!-- 第一行-->
+    <div>
+        <h3>今日头条</h3> <!-- 标题默认有外边距-->
+        <a href="#">更多&gt;&gt;</a>
+    </div>
+    <div class="myBox">
+        我是margin居中样式
+    </div>
+    <!-- 第二行--><!--div标签容器内部只有一个标签，div可以删除-->
+    <img src="Source/imgs/111.jpg" alt="banner" width="500">
+
+    <!-- 第三行-->
+    <p>
+        我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。
+        我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。
+        我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。
+        我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。
+        我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。
+        我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。我是xxxx,毕业于xxxx。
+    </p>
+
+</div>
+</body>
+</html>
