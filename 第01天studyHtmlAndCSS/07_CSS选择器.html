@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+    <style>
+        /*  01、定义标签选择器 */
+        div {
+            color: yellowgreen;
+            }
+
+        /*  02、定义类选择器-----使用最多的一种选择器*/
+        .ljkBlue{
+            color:blue;
+        }
+        .ljkTitle{
+            color:red;
+        }
+        .ljkBig{
+            font-size: 50px;
+        }
+
+        /*  03、定义层级选择器 */
+        .ljkBlue span{
+            color: aquamarine;
+            background: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="ljkTitle ljkBig">CSS选择器</h2>
+    <li class="ljkBlue">01、标签选择器</li>
+    <li class="ljkBlue">02、类选择器</li>
+    <li class="ljkBlue">03、层级选择器</li>
+    <p>-----------------------------------------------------------</p>
+    <div class="ljkBig">这是第一个div</div>
+    <div>这是第二个div</div>
+    <p class="ljkBlue"> 这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！
+        <span>这是一个段落！</span>这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！
+        这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！
+        这是一个段落！</p>
+    <span class="ljkBlue ljkBig">我也是span标签</span>
+</body>
+</html>

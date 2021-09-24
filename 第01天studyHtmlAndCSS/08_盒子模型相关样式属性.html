@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型相关样式属性</title>
+    <style>
+        .ljkBox{
+            /* 01、设置宽度、高度*/
+            width: 300px;       /* 这是设置的内容的尺寸 */
+            height: 300px;      /* 这是设置的内容的尺寸 */
+            background: chocolate;
+
+            /*
+                02、设置内间距
+                    合并一起写：12点钟方向顺时针转
+            */
+            /*padding-top: 100px;*/
+            /*padding-bottom: 50px;*/
+            /*padding-left: 20px;*/
+            /*padding-right: 40px;*/
+            padding: 100px 40px 50px 20px;
+            /*
+                padding: 100px 40px 20px;
+                上：100px，左右：40px，下：2opx
+                padding: 100px 40px;
+                上下：100px，左右：40px
+            */
+
+
+            /*
+                03、设置边框
+                    边框线型：
+                        solid 实线
+                        dashed 虚线
+                        dotted 点线
+            */
+            border-top: 12px solid yellowgreen;
+            border-left: 8px dashed lawngreen;
+            border-right: 8px dotted yellow;
+            border-bottom: 10px dashed black;
+
+            /*04、设置外间距*/
+            /*margin-left: 80px;*/
+            /*margin-right: 10px;*/
+            /*margin-top: 40px;*/
+            /*margin-bottom: 100px;*/
+            margin: 40px 10px 100px 80px;
+        }
+    </style>
+</head>
+<body>
+    <h2>盒子模型相关样式属性</h2>
+    <div class="ljkBox">
+        <div >aaaa</div>
+        <div >bbbbb</div>
+        <span>这是盒子的效果01</span>
+        <span>这是盒子的效果11</span>
+    </div>
+    <div class="ljkBox">这是盒子的效果2</div>
+</body>
+</html>
