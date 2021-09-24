@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式引入页面的三种方式</title>
+    <style>
+        /* div选择器，选择页面中所有的div标签 */
+        div {
+            color: yellow;
+            width: 300px;
+            height: 60px;
+            background: brown
+        }
+    </style>
+    <link rel="stylesheet" href="Source/css/ljkMain.css">
+</head>
+<body>
+    <h2>样式引入页面的三种方式</h2>
+    <!--第一种引入样式的方式：内联式  不推荐使用-->
+   <h3 style="color: chocolate; width: 300px;height: 60px;background: bisque">这是第一种引入样式</h3>
+    <!--第二种引入样式的方式：嵌入式  一般首页使用，加载速度块 -->
+    <div>
+        这是第二种引入样式
+        <p>这是第三种引入样式</p>>
+        <!-- <div>aaaaaaaaaa</div>-->
+        <!-- <p>这是第二种引入样式</p>-->
+        <!-- <div>-->
+        <!--      这是第二种引入样式002-->
+        <!-- </div>-->
+    </div>
+    <!--第三种引入样式的方式：外链式   -->
+    <p>这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！
+        这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！
+        这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！这是一个段落！
+        这是一个段落！</p>
+</body>
+</html>
