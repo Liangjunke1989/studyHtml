@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建表格</title>
+    <style>
+        .myTableStyle01{
+            width: 900px;
+            height: 450px;
+            border:1px solid black;
+            /* 让表格水平居中 */
+            margin: 20px auto;
+            /* 将表格的边线合并成一条线 */
+            border-collapse: collapse;
+        }
+        .myTableStyle01 th{
+            height: 80px;
+        }
+        .myTableStyle01 .myTableHead01{
+            color: white;
+            background: teal;
+        }
+        .myTableStyle01 .myTableHead02{
+            color: black;
+            background: gainsboro;
+        }
+        .myTableStyle01 td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>创建表格</h2>
+    <table class="myTableStyle01">
+        <tr>
+            <th class="myTableHead01">编号</th>
+            <th class="myTableHead02">姓名</th>
+            <th class="myTableHead01">密码</th>
+            <th class="myTableHead02">年龄</th>
+            <th class="myTableHead01">日期</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>张三丰</td>
+            <td>123123</td>
+            <td>123</td>
+            <td>1001-01-01</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>郭靖</td>
+            <td>85</td>
+            <td>1122</td>
+            <td>1650-06-05</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>天山童姥</td>
+            <td>243</td>
+            <td>12345</td>
+            <td>620-03-05</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>萧峰</td>
+            <td>102</td>
+            <td>54131</td>
+            <td>1660-02-09</td>
+        </tr>
+    </table>
+</body>
+</html>

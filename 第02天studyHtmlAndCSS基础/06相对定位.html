@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+        .con{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 50px auto;
+            position: relative;      /* 一般情况下，将父级设置为相对定位。不设置偏移值。
+                                        子级可以相对于父级进行绝对定位 */
+            overflow: hidden;
+        }
+        .box01, .box02, .box03{
+            background: teal;
+            width: 580px;
+            height: 150px;
+            margin: 10px;
+        }
+        .box01{
+            background: red;
+            /* 设置相对定位属性 */
+            position: relative;     /* 相对定位，当对于自己原来的位置偏移。 */
+            /*  设置偏移属性  */
+            left:20px;
+            top:20px;
+        }
+        .box02{
+            background: chocolate;
+            /* 设置绝对定位属性 */
+            position: absolute;    /* 绝对定位，原先位置不要了，脱离文档流了。 先找父级的定位属性。 */
+            /* 设置偏移属性  */
+            left:50px;             /* 子级一般设置为绝对定位，当对于父级的位置偏移。 */
+            top:50px;
+        }
+        .box03{
+            background: bisque;
+            /* 设置固定定位属性  */
+            position: fixed;
+            /* 设置偏移属性  */
+            right:550px;            /* 偏移量参考浏览器窗口，一般慎用 */
+            top:150px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="con" >
+        <div class="box01">111</div>
+        <div class="box02">222</div>
+        <div class="box03">333</div>
+    </div>
+</body>
+</html>
