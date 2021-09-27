@@ -7,6 +7,38 @@
         .myForm div{
             margin: 10px auto;
         }
+        .search_form{
+            width: 802px;
+            height: 42px;
+            background: gold;
+            margin: 0 auto;
+        }
+        .input_txt{
+            width: 680px;
+            height: 40px;
+            border: 1px solid teal;
+
+             /*  清除输入框默认的padding值  */
+            padding: 0;
+            z-index: 1;
+            float: left;
+            /*  让文字缩进  */
+            text-indent: 15px;
+            font-size: 16px;
+            /* 去掉输入框点击时显示的蓝色高亮框  */
+            outline:none;
+
+        }
+        .input_sub{
+            width: 120px;
+            height: 42px;
+            background:teal;
+            border: 0;
+            float: right;
+            z-index: 2;
+            color: white;
+            font-size: 21px;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +106,13 @@
             <input type="reset" value="重置">
             <input type="button" value="普通按钮">  <!--js中绑定函数事件使用-->
         </div>
-
+    </form>
+    <form class="search_form" action="https://cn.bing.com/search"  method="post">
+        <label >
+            <!--输入框内的默认提示文字 placeholder-->
+            <input type="text" class="input_txt" placeholder="请输入搜索内容">
+        </label>
+        <input type="submit" value="搜 索" class="input_sub" >
     </form>
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中的弹框效果</title>
+    <style>
+        .pop{
+
+        }
+        .pop_con{
+            width: 500px;
+            height: 300px;
+            border:1px solid black;
+            position: fixed;
+            left:50%;
+            margin-left: -251px;   /* margin-left: 纠正偏差效果 */
+            /* 定位元素水平垂直居中的技巧 */
+            top:50%;
+            margin-top: -221px;   /* margin-top: 纠正偏差效果 */
+            background: gray;
+            overflow: hidden;
+        }
+        .pop .boxTitle{
+            color:lightgray;
+            position: relative;
+            background: teal;
+            width: 500px;
+            border-bottom: 3px solid lightgray;
+
+        }
+        .pop .boxContent{
+            color: white;
+            position: relative;
+            background: chocolate;
+            width: 550px;
+            height: 350px;
+
+        }
+        #boxTitleText{
+            padding: 15px;
+            position: relative;
+            left: 50%;
+            margin-left: -48px;
+            color: white;
+            text-effect: emboss;
+        }
+        #boxContentText{
+            padding: 20px;
+            text-align: center;
+        }
+        .mask{
+            position: fixed;
+            width: 100%;    /* 设置为固定定位，宽度和高度就可以设置百分比 */
+            height: 100%;
+            left:0;
+            top:0;
+            background: black;
+            z-index: -1;
+            /*  设置元素透明度 */
+            opacity: 65%;
+            /*  透明度兼容IE的写法 */
+            filter: alpha(opacity=30);
+        }
+        .pop_con{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>垂直居中的弹框效果</h2>
+    <div class="pop">
+        <div class="pop_con" style="display: block">
+            <div class="boxTitle">
+                <div id="boxTitleText">弹框的标题</div>
+            </div>
+            <div class="boxContent">
+                <div id="boxContentText">请求关闭当前窗口，请确认后关闭！！！</div>
+            </div>
+            <div class="mask">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

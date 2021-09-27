@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>定位元素的层级</title>
+    <title>定位元素层级</title>
+    <style>
+        .con{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 50px auto;
+            position: relative;      /* 一般情况下，将父级设置为相对定位。不设置偏移值。
+                                        子级可以相对于父级进行绝对定位 */
+            overflow: hidden;         /* css元素溢出
+                                         overflow: visible  默认值 内容不会被修剪,会呈现在元素框之外
+                                         overflow: hidden   内容会被修剪，并且其余内容不可见
+                                         overflow: scroll   内容会被修剪，但是浏览器总是会显示滚动条以便查看其余内容
+                                         overflow: auto     内容会被修剪时，会显示滚动条以便查看其余内容
+                                        */
+        }
+        .box01, .box02, .box03,.box04{
+            background: teal;
+            width: 580px;
+            height: 150px;
+            margin: 10px;
+            position: absolute;
+        }
+        .box01{
+            background: red;
+            /*  设置偏移属性  */
+            left:20px;
+            top:20px;
+            /* 设置定位元素的层级 */
+            z-index: 1;
+        }
+        .box02{
+            background: chocolate;
+            /*  设置偏移属性  */
+            left:50px;
+            top:50px;
+            z-index: 2;
+        }
+        .box03{
+            background: bisque;
+            /*  设置偏移属性  */
+            left:150px;
+            top:150px;
+            z-index: 4;
+        }
+        .box04{
+            background: lawngreen;
+            /*  设置偏移属性  */
+            left:150px;
+            top:150px;
+            z-index: 3;   /* z-index 数字越大在越上面 */
+        }
+    </style>
 </head>
 <body>
+<div class="con" >
+    <div class="box01">111</div>
+    <div class="box02">222</div>
+    <div class="box03">333</div>
+    <div class="box04">444</div> <!--默认 后写的在最上面-->
 
+</div>
 </body>
 </html>
