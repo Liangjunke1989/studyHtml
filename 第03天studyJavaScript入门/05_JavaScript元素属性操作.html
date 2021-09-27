@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素属性操作</title>
+    <style>
+        .sty01{
+            color: teal;
+            font-size: 20px;
+        }
+        .sty01{
+            color: pink;
+            font-size: 40px;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        window.onload=function (){
+            var oDiv = document.getElementById('div01');
+            //读取属性值
+            var sId=oDiv.id;
+            alert(sId);
+
+            //写属性值
+            oDiv.style.color='red';
+            oDiv.style.fontSize='30px';
+            oDiv.style.background='black';
+
+
+            // var oA = document.getElementById('link01');
+            // oA.style.color='blue';
+            var oA02 = document.getElementById('link01');
+            oA02.className='sty02';
+
+            //操作元素包裹的内容
+            //读取包裹的内容
+            var oDiv02 = document.getElementById('div02');
+            var sTr = oDiv02.innerHTML;
+            alert(sTr);
+            //往包裹里的写入内容
+            oDiv02.innerHTML="改变了文字哦哦哦"
+            oDiv02.innerHTML='<div style="color: teal;background: yellow;font-size: 40px" >这是第三个div</div>';
+        }
+    </script>
+</head>
+<body>
+    <div id="div01">这是第一个div</div>
+    <a href="#" class="sty01" id="link01">这是一个链接</a>
+    <div id="div02">这是第二个div</div>
+</body>
+</html>

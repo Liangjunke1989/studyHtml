@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取页面元素</title>
+    <script> <!--注意执行顺序-->
+        //等页面加载完成之后，再执行大括号里面的语句
+        window.onload=function (){
+            // document.getElementById('div01').style.color='blue';
+            // document.getElementById('div01').style.width='300px';
+            // document.getElementById('div01').style.height='300px';
+            // document.getElementById('div01').style.background='gold';
+            var oDiv=document.getElementById('div01');
+            oDiv.style.color='blue';
+            oDiv.style.width='300px';
+            oDiv.style.height='300px';
+            oDiv.style.background='gold';
+        }
+    </script>
+</head>
+<body>
+    <div id="div01">这是一个div元素</div>
+</body>
+</html>
