@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>JS函数</title>
     <script>
-        //定义函数
+        //01、定义函数,可以传入参数
         function fnMyAlert(i){
             alert('myAlert被调用了！！');
             alert(i);
@@ -13,6 +13,32 @@
         var iNum00=15;
         fnMyAlert(iNum00);
 
+
+
+        //1、没有返回值的方法
+        // //调用
+        // fnAdd01(2,10);
+        // //定义
+        // function fnAdd01(iNum01,iNum02){
+        //     var iRs=iNum01+iNum02
+        //     alert(iRs)
+        // }
+
+        //02、定义函数，可以带有返回值
+        /*
+          函数中return关键字的作用：
+            1、返回函数中的值或者对象
+            2、结束函数的运行
+         */
+
+        //2、带有返回值的方法
+        //调用
+        var reslut = fnAdd02(2,10);
+        alert('相加返回的结果为:'+reslut)
+        //定义
+        function fnAdd02(iNum01,iNum02){
+            return iNum01 + iNum02;
+        }
     </script>
 </head>
 <body>

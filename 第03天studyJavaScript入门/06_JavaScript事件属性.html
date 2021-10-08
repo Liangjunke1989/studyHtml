@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>事件属性</title>
+    <script>
+        window.onload=function (){
+            var oBtn = document.getElementById('btn');
+            var oDiv = document.getElementById('div01');
+
+            //为onclick事件属性赋值
+            // 第一种写法：定义个普通方法进行传值
+            /*
+                oBtn.onclick=fnChange;  //  fnChange():函数直接调用，获取到的返回值再进行传值。undefined进行传值的
+
+                                        //  fuChange:  将方法作为参数进行传值的。
+                function fnChange(){
+                    oDiv.style.width='200px';
+                    oDiv.style.height='200px';
+                    oDiv.style.background='gold';
+                }
+            */
+            // 第二种写法：定义个匿名方法进行传值
+            oBtn.onclick=function (){
+                oDiv.style.width='200px';
+                oDiv.style.height='200px';
+                oDiv.style.background='gold';
+            }
+        }
+
+    </script>
 </head>
 <body>
-
+    <!-- 点击按钮 改变元素样式 -->
+    <input type="button" value="点击，改变样式，触发事件" id="btn">
+    <div id="div01">这是一个div01</div>
 </body>
 </html>

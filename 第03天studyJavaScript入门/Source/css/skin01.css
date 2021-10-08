@@ -1,0 +1,17 @@
+body{
+    background: teal;
+}
+input{
+    width: 200px;
+    height: 50px;
+    background: yellow;
+    border-radius:10px;
+    border: 0;
+    color: gray;
+    font-size: 18px;
+    font-style: inherit;
+    outline: none;
+}
+h1,h2{
+    color: white;
+}
