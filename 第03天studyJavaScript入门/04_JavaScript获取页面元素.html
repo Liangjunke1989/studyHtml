@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>获取页面元素</title>
-    <script> <!--注意执行顺序-->
-        //等页面加载完成之后，再执行大括号里面的语句
+    <script>
+        <!--注意执行顺序-->
+        //当整个页面加载完成之后，再执行大括号里面的语句------window.onload_等待执行,如果不加，是按照顺序执行，报错！！！
         window.onload=function (){
             // document.getElementById('div01').style.color='blue';
             // document.getElementById('div01').style.width='300px';
             // document.getElementById('div01').style.height='300px';
             // document.getElementById('div01').style.background='gold';
+
+            //01、获取元素
             var oDiv=document.getElementById('div01');
+            //02、操作元素style属性
             oDiv.style.color='blue';
             oDiv.style.width='300px';
             oDiv.style.height='300px';

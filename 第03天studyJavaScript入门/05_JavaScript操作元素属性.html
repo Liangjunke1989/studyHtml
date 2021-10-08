@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>元素属性操作</title>
+    <title>操作元素属性</title>
     <style>
         .sty01{
             color: teal;
@@ -16,28 +16,28 @@
     </style>
     <script>
         window.onload=function (){
+            //0、获取页面元素
             var oDiv = document.getElementById('div01');
-            //读取属性值
+            //1、读取属性值
             var sId=oDiv.id;
             alert(sId);
-
-            //写属性值
+            //2、写属性值
             oDiv.style.color='red';
-            oDiv.style.fontSize='30px';
+            oDiv.style.fontSize='30px';    // js属性和html属性不同01
             oDiv.style.background='black';
-
-
-            // var oA = document.getElementById('link01');
-            // oA.style.color='blue';
+            //注意js操作属性和html操作属性的两个不同之处
             var oA02 = document.getElementById('link01');
-            oA02.className='sty02';
+            oA02.className='sty02';       // js属性和html属性不同02
 
-            //操作元素包裹的内容
-            //读取包裹的内容
+            //3、操作元素包裹的内容innerHTML
+            //3.1、读取元素包裹的内容
             var oDiv02 = document.getElementById('div02');
-            var sTr = oDiv02.innerHTML;
-            alert(sTr);
-            //往包裹里的写入内容
+            var sTr = oDiv02.innerHTML;// 读取元素包裹的内容
+            //alert(sTr);
+            //3.2、往包裹里的写入内容
+            // 这里的sTr变量可以理解为值类型，更改sTr的值无法更改oDiv02.innerHTML的值
+            // sTr="改变了文字啊啊啊";
+            // sTr='<div style="color: teal;background: yellow;font-size: 40px" >这是第三个div</div>';
             oDiv02.innerHTML="改变了文字哦哦哦"
             oDiv02.innerHTML='<div style="color: teal;background: yellow;font-size: 40px" >这是第三个div</div>';
         }
