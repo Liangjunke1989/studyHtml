@@ -1,0 +1,10 @@
+.list{
+    width: 800px;
+    list-style: none;
+    padding: 0px;
+    margin: 50px auto;
+}
+.list li{
+    line-height: 60px;
+    border-bottom: 1px dotted sandybrown;
+}
