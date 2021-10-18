@@ -1,0 +1,38 @@
+body{
+    font-family: 'Microsoft Sans Serif';
+}
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{list-style: none;}
+
+.menu{
+    width: 200px;
+    margin: 20px auto 0;
+}
+
+.menu .level1, .menu li ul a{
+    display: block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: teal;
+    color: white;
+    font-size: 16px;
+    text-indent: 10px;
+}
+
+.menu .level1{
+    border-bottom: 1px solid #afc6f6;
+}
+.menu li ul a{
+    font-size: 14px;
+    margin: 0;
+
+}
+.menu li ul li a.hover{
+    background-color: gold;
+}

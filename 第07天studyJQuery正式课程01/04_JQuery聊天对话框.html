@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery聊天对话框</title>
+    <link rel="stylesheet" href="Source/css/04_jqueryChatRoom.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="Source/js/04_JQueryChat.js"></script>
+
+</head>
+<body>
+
+<h2>JQuery练习————JQuery聊天对话框</h2>
+<div class="talk_con">
+    <div class="talk_show" id="words">
+        <div class="atalk"><span>A说：吃饭了吗？</span></div>
+        <div class="btalk"><span>B说：还没呢，你呢？</span></div>
+    </div>
+    <div class="talk_input">
+        <select class="whotalk" name="" id="who" >
+            <option value="0">A说：</option>
+            <option value="1">B说：</option>
+        </select>
+        <input type="text" class="talk_word" id="talkwords">
+        <input type="button" value="发送" class="talk_sub" id="talksub">
+    </div>
+</div>
+</body>
+</html>
