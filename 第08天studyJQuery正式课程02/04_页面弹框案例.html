@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面弹框案例</title>
+    <link rel="stylesheet" href="Source/css/04_ DialogTest.css">
+    <script src="Source/js/jquery-1.12.4.min.js"></script>
+    <script src="Source/js/04_Dialog.js"></script>
+</head>
+<body>
+    <h2>页面弹框案例</h2>
+    <input type="button" value="显示对话框" id="btn01" >
+    <div class="pop_main" id="pop">
+        <div class="pop_con">
+            <div class="pop_title">
+                <div id="pop_titleText">弹框标题</div>
+                <a href="#" id="shutoff">x</a>
+            </div>
+            <div class="pop_detail">
+                <div id="pop_detailText">亲！请关注近期优惠活动！</div>
+            </div>
+            <div class="pop_footer"></div>
+        </div>
+        <!--弹框的背景-->
+        <div class="mask"></div>
+    </div>
+</body>
+</html>

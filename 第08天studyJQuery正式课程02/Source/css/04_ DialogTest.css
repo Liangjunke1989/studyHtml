@@ -1,0 +1,80 @@
+.pop_main{
+    display: none;
+}
+.pop_con{
+    display: block;
+}
+.pop_con{
+    width: 500px;
+    height: 300px;
+    border:2px solid darkgray;
+    position: fixed;
+    left:50%;
+    margin-left: -251px;   /* margin-left: 纠正偏差效果 */
+    /* 定位元素水平垂直居中的技巧 */
+    top:50%;
+    margin-top: -221px;   /* margin-top: 纠正偏差效果 */
+    background: gray;
+    overflow: hidden;
+    border-radius:20px;
+}
+
+.pop_title{
+    color:lightgray;
+    position: relative;
+    background: teal;
+    width: 500px;
+    border-bottom: 3px solid lightgray;
+}
+#shutoff{
+    width: 30px;
+    height: 30px;
+    border-radius:8px;
+    background: red;
+    border-bottom: 1px solid grey;
+    float: right;
+    right: 15px;
+    position: relative;
+    margin-top: -40px;
+    font-size: 26px;
+    color: wheat;
+    text-decoration:none;
+    text-align: center;
+    line-height: 24px;
+}
+
+#pop_titleText{
+    padding: 15px;
+    position: relative;
+    left: 50%;
+    margin-left: -48px;
+    color: white;
+    text-effect: emboss;
+}
+.pop_detail{
+    color: white;
+    position: relative;
+    background: chocolate;
+    width: 550px;
+    height: 350px;
+}
+#pop_detailText{
+    padding: 40px;
+    text-align: left;
+    text-indent: 25px;
+    font-size: 24px;
+}
+
+.mask{
+    position: fixed;
+    width: 100%;    /* 设置为固定定位，宽度和高度就可以设置百分比 */
+    height: 100%;
+    left:0;
+    top:0;
+    background: black;
+    z-index: -1;
+    /*  设置元素透明度 */
+    opacity: 65%;
+    /*  透明度兼容IE的写法 */
+    filter: alpha(opacity=30);
+}
